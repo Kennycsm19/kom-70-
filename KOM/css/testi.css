@@ -1,0 +1,30 @@
+section#testi {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://kom.pe/wp-content/uploads/trabajadores-kom-agencia-digital-web.webp);
+    background-color: var(--azul);
+    background-blend-mode: multiply;
+    height: 500px;
+    background-position-x: 0;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 70px 0;
+}
+
+section#testi p:last-child {
+    font-size: 2.8rem;
+}
+
+section#testi p:first-child {
+    margin: 0 auto;
+}
+
+#testi p:nth-child(2) {font-size: 1.8rem;padding: 0 36px;line-height: 23px;font-weight: 500;}
+
+#testi a {
+    margin: 0 auto;
+}

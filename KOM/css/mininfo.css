@@ -1,0 +1,60 @@
+.mininfotshirt {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "tshirtytext tshirtytext tshirtytext"
+    "tshirtytext tshirtytext tshirtytext"
+    "tshirtimg tshirtimg tshirtimg"
+    "tshirtimg tshirtimg tshirtimg";
+}
+
+.tshirtytext {grid-area: tshirtytext;padding: 20px 20px;}
+
+.tshirtimg {grid-area: tshirtimg;display: flex;align-items: flex-end;justify-content: center;}
+
+section#mininfo {
+    background-color: var(--celeste);
+}
+
+.mininfo h3 {
+    text-align: center;
+    font-size: 3.5rem;
+    width: 240px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 39px;
+    margin: 20px 0;
+}
+
+section#mininfo h3 {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 4.4rem;
+    font-family: sans-serif;
+    line-height: 45px;
+}
+
+.tshirtytext p {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--gris);
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.tshirtytext a {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    width: 170px;
+}
+.tshirtimg figure {
+    display: flex;
+}
+.tshirtimg img {
+    width: 318px;
+}

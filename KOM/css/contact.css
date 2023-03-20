@@ -1,0 +1,126 @@
+.formgrid {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "formcontainer formcontainer formcontainer formcontainer"
+    "formcontainer formcontainer formcontainer formcontainer"
+    "formcontainer formcontainer formcontainer formcontainer"
+    "formcontainer formcontainer formcontainer formcontainer"
+    "ifdiv ifdiv ifdiv ifdiv"
+    "ifdiv ifdiv ifdiv ifdiv"
+    "ifdiv ifdiv ifdiv ifdiv"
+    "ifdiv ifdiv ifdiv ifdiv";
+}
+.formcontainer, .ifdiv {grid-area: formcontainer;padding: 35px;}
+.ifdiv { grid-area: ifdiv; }
+#contact {
+    background-image: url(https://kom.pe/wp-content/uploads/fondo-4-1.png);
+    color: white;
+}
+.contactcontainer p, .marifdiv p:nth-child(1) {
+    font-size: 3.8rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    line-height: 42px;
+} {
+    font-size: 3.8rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    line-height: 42px;
+}
+.contactcontainer span {
+    color: var(--naranja);
+}
+.contactcontainer {
+    width: 271px;
+    margin: 15px 0;
+}
+label.eliminar {
+    display: none;
+}input#submitform {
+    display: block;
+    width: 15px;
+    margin-bottom: 0;
+    margin-right: 8px;
+}
+.formcontainer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+.contactcontainer input {
+    background-color: transparent;
+}
+form input {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 1.8rem;
+    border-bottom: 1.5px solid;
+    padding: 5px 10px;
+    font-family: 'Nunito';
+    width: 90%;
+    margin-bottom: 30px;
+}
+input::placeholder {
+    color: #ffffff94;
+    font-weight: 300;
+}
+label.lastlabel {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin: 12px 0;
+}
+label.lastlabel {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin: 12px 0;
+}
+button.botonone {
+  width: 202px;
+      margin-top: 25px;
+}
+button.botonone span {
+    height: 20px;
+    width: 16px;
+}
+.marifdiv p:nth-child(2) {font-size: 1.8rem;font-weight: 500;margin: 18px 0;padding-left: 5px;}
+.reddiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.reddiv a {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.reddiv a span {width: 20px;height: 20px;display: block;background-position: center;background-repeat: no-repeat;background-size: contain;margin-right: 12px;}
+
+.reddiv a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.reddiv a:nth-child(1) span {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/889/889619.png);
+}
+
+.reddiv a:nth-child(2) span {
+    background-image: url(https://cdn-icons-png.flaticon.com/128/3313/3313026.png);
+}
+
+.reddiv a:nth-child(3) span {
+    background-image: url(https://cdn-icons-png.flaticon.com/128/9053/9053395.png);
+}
+
+.reddiv a:nth-child(4) span {
+    background-image: url(https://cdn-icons-png.flaticon.com/128/880/880914.png);
+}

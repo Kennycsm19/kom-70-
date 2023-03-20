@@ -1,0 +1,69 @@
+function init() {
+  const nav = document.querySelector('.header');
+  const isSticky = window.getComputedStyle(nav).position == 'sticky';
+  const headerHeight = document.querySelector('.promotion').offsetHeight;
+  let latestKnownScrollY = 0, ticking = false, isDone = false;
+
+  let update = function () {
+    const cls = nav.classList;
+    if (latestKnownScrollY >= headerHeight && !isDone) {
+      if (!isSticky) cls.add("is-fixed"); // IE11 and Edge 15
+      cls.add("is-scrolled");
+      isDone = true;
+    } else if (latestKnownScrollY < headerHeight && isDone) {
+      if (!isSticky) cls.remove("is-fixed");
+      cls.remove("is-scrolled");
+      isDone = false;
+    }
+    // allow further rAFs to be called
+    ticking = false;
+  };
+
+  /* See:
+<https://www.html5rocks.com/en/tutorials/speed/animations/#debouncing-scroll-events> */
+  let onScroll = function () {
+    latestKnownScrollY = window.pageYOffset;
+    if (!ticking) {
+      requestAnimationFrame(update);
+      ticking = true;
+    }
+  };
+
+  window.addEventListener('scroll', onScroll, false);
+}
+
+document.addEventListener('DOMContentLoaded', init, false);
+
+/* 2020-02-26 - Added Intersection Observer which works basically in all browsers except IE. See browser support at
+ https://caniuse.com/#feat=intersectionobserver
+*/
+if ('IntersectionObserver' in window) {
+  const options = {
+    root: null,
+    rootMargin: "-50px 0px -400px",
+    threshold: 1
+  };
+
+  const links = document.querySelectorAll('nav a');
+
+  let intersectHandler = function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        links.forEach(function (a) {
+          if (a.textContent == entry.target.textContent) {
+            a.classList.add('is-selected');
+          } else {
+            a.classList.remove('is-selected');
+          }
+        });
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(intersectHandler, options);
+
+  const targets = document.querySelectorAll('main h3');
+  targets.forEach(function (target) {
+    observer.observe(target);
+  });
+}

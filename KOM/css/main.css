@@ -1,0 +1,50 @@
+main {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    max-height: 525px;
+    background-image: url(https://kom.pe/wp-content/uploads/kom-agencia-digital-lima-peru-portada.webp);
+    background-color: var(--azul);
+    background-blend-mode: multiply;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    background-color: var(--naranja);
+    padding: 12px 28px;
+    border-radius: 23px;
+}
+h1 {
+    font-size: 5.4rem;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 62px;
+    padding: 0px 40px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    padding: 0px 45px;
+    font-size: 2.1rem;
+    font-weight: 600;
+    line-height: 25px;
+}
+.mainson {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}

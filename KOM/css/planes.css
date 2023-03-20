@@ -1,0 +1,202 @@
+.planesdiv {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0fr 1fr 1fr 1fr 1fr 1fr auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "planp"
+    "planp"
+    "planexplicit"
+    "planexplicit"
+    "planexplicit"
+    "planexplicit"
+    "planexplicit"
+    "planexplicit";
+}
+
+.planp { grid-area: planp; }
+
+.planexplicit { grid-area: planexplicit; }
+.planp, .acordtext {
+    padding: 25px;
+}
+
+.planp p:first-child, .acordtext p {
+    color: var(--naranja);
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.planp h3 {
+  font-family: sans-serif;
+      font-size: 5rem;
+      line-height: 48px;
+      width: auto;
+}
+
+.planp p:last-child {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--oscuro);
+}
+.planexplicit {
+    min-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.plans {
+    background-color: var(--plomo);
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px 1px #00000036;
+    margin-bottom: 20px;
+}
+.plans > p:nth-child(1) {
+    color: white;
+    background-color: var(--naranja);
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 600;
+    padding: 8px 0;
+    border-radius: 20px 20px 0 0;
+}
+
+.plans > p:nth-child(2) {
+    background-color: var(--azul);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 6rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    height: 120px;
+    justify-content: center;
+}
+
+.plans small {font-size: 1.3rem;font-family: 'Nunito';font-weight: 400;text-decoration: line-through;}
+
+.graycontent i {
+    font-size: 2.4rem;
+    font-style: unset;
+    font-weight: 700;
+    margin: 0 auto;
+    display: table;
+    padding: 5px 16px;
+    text-align: center;
+    color: var(--naranja);
+    border-bottom: 2px solid #cfd3e5;
+    width: 100%;
+}
+.pblue {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #16226f;
+    padding: 15px 0;
+}
+
+.graycontent ul {
+    list-style: none;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--metal);
+}
+
+.pblue li {
+    margin-bottom: 6px;
+}
+
+.graycontent li {
+    margin-bottom: 4px;
+}
+
+.graycontent li:last-child {
+    padding: 0 12px;
+}
+
+.botonone {
+    background-color: var(--naranja);
+    color: white;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 12px 28px;
+    border-radius: 53px;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 184px;
+    border: 0;
+}
+
+.botonone span {
+    width: 10px;
+    height: 10px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/271/271226.png);
+    filter: invert(1);
+}
+p.same {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--azultext);
+    margin: 10px 0;
+}
+
+p.same:nth-child(2) {
+    background-color: darkgrey;
+}
+
+.same:nth-child(2) {
+}
+
+.plans .graycontent p.same:last-of-type {
+    color: var(--metaldos);
+    font-weight: 700;
+    border-top: 1px solid #cfd3e5;
+    padding: 7px 0;
+    font-size: 1.8rem;
+}
+.lastplanp {
+    text-align: left;
+    padding: 25px 40px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.lastplanp p {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    color: var(--metaldos);
+}
+
+.lastplanp p span {
+    width: 10px;
+    height: 10px;
+    display: block;
+    padding-left: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(https://pngimg.com/uploads/apostrophe/apostrophe_PNG26.png);
+    margin-right: 4px;
+}
+
+.lastplanp a {
+    color: var(--metaldos);
+    text-decoration: none;
+    margin-left: 4px;
+}

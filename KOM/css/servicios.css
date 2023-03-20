@@ -1,0 +1,113 @@
+section.miniad {
+    background-color: var(--celeste);
+}
+section.miniad h3 {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 4.5rem;
+    line-height: 47px;
+    padding: 25px 33px;
+    color: var(--azul);
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.miniad > p {
+    color: var(--naranja);
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 600;
+    padding: 8px 30px;
+}
+.cube:nth-child(1) {
+    background-image: url(https://kom.pe/wp-content/uploads/kom-agencia-digital-en-lima-peru-diseno-de-paginas-web-marketing.webp);
+}
+
+.cube {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--azul);
+  background-blend-mode: multiply;
+  width: 90%;
+  max-width: 390px;
+  margin: 20px auto;
+  height: 537px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  align-items: center;
+  padding: 28px 0;
+}
+
+.cube:nth-child(2) {
+    background-image: url(https://kom.pe/wp-content/uploads/kom-agencia-digital-en-lima-peru-diseno-de-paginas-web.webp);
+}
+
+.cube:nth-child(3) {
+    background-image: url(https://kom.pe/wp-content/uploads/kom-agencia-digital-en-lima-peru-diseno-de-paginas-web-experiencia-de-usuario.webp);
+}
+
+.cube:nth-child(4) {
+    background-image: url(https://kom.pe/wp-content/uploads/kom-agencia-digital-en-lima-peru-diseno-de-paginas-web-campanas-en-google-ads.webp);
+}
+.cube h4 {
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 4rem;
+    line-height: 43px;
+    min-width: 271px;
+}
+
+.cube p {
+    font-size: 1.7rem;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.cube a {
+    background-color: var(--naranja);
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 auto;
+    display: table;
+    padding: 15px 30px;
+    border-radius: 38px;
+}
+
+.icon {
+    width: 60px;
+    height: 62px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.servicioscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+}
+.servicioscontainer div:nth-child(1) .icon{
+  background-image: url(https://icones.pro/wp-content/uploads/2022/03/icone-d-ordinateur-portable-orange.png);
+}
+.servicioscontainer div:nth-child(2) .icon{
+  background-image: url(https://icones.pro/wp-content/uploads/2021/05/icone-de-panier-orange.png);
+}
+.servicioscontainer div:nth-child(3) .icon{
+  background-image: url(https://freesvg.org/img/rocket-312767.png);
+}
+.servicioscontainer div:nth-child(4) .icon{
+  background-image: url(https://icones.pro/wp-content/uploads/2021/02/google-icone-symbole-png-logo-orange.png);
+}

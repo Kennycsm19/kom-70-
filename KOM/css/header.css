@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+  font-family: 'Nunito', 'Poppins', 'arial';
+  width: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+:root {
+  --naranja: #FF4B36;
+  --oscuro: #03051A;
+  --azul: #07104B;
+  --pastel: #9094AF;
+  --gris: #2F2F33;
+  --celeste: #f2f7ff;
+  --plomo: #ececec;
+--metaldos: #919191;
+--metal: #484c44;
+--azultext: #16226f;
+}
+.promotion {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 591px;
+    height: 92px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.logocien {
+}
+.arrows {
+    width: 70px;
+    height: 38px;
+    background-image: url(../icon/arrows.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.logocienp {
+    font-size: 1.1rem;
+    font-family: 'Nunito';
+}
+.logocienp p, .cregresiva {
+    color: var(--azul);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.logocienp p:last-child {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-top: 1px;
+}
+.cregresiva {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+p#countdown {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+label.promotionsidebar {
+    background-color: var(--naranja);
+    padding: 3px 31%;
+    color: white;
+    font-weight: 700;
+    border-radius: 13px;
+    font-size: 1.6rem;
+    margin: 0 auto;
+    margin-bottom: 2px;
+}
+label.sidebarIconToggle {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/4254/4254068.png);
+    filter: invert(1);
+    margin-right: 15px;
+}
+.innericon{
+  width: 15px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/54/54366.png);
+  margin-right: 30px;
+}
+body *, body *:before, body *:after {
+}
+header h1 {
+  font-size: 2.5em;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+header {
+  position: sticky;
+  top: 0;
+  transition: background-color 250ms linear;
+  width: 100%;
+  z-index: 999;
+}
+.is-fixed {
+  position: fixed;
+}
+header ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  line-height: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header a {
+  transition: all 150ms linear;
+}
+
+.is-scrolled {
+  transition: background-color 250ms linear;
+}
+
+.is-scrolled a {
+  color: #fff;
+}
+
+.is-scrolled a:hover,
+.is-scrolled a:focus,
+.is-scrolled a:active,
+.is-scrolled a.is-selected {
+  background-color: snow;
+  color: #00b6e3;
+}
+.main {
+  display: block;
+  margin: 0 auto;
+  max-width: 80ch;
+}
+.main p {
+  font-size: 1rem;
+  margin: 2em auto;
+}
+.main h3 {
+  letter-spacing: 0.1em;
+  scroll-margin: 20px 0 0 0;
+  text-transform: uppercase;
+}
+.main h3:first-child {
+  margin-top: 2em;
+}
+.main h3::before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden;
+  pointer-events: none;
+}
+#sidebarMenu {
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  max-width: 425px;
+  transform: translateX(900px);
+  transition: transform 500ms ease-in-out;
+  z-index: 3;
+  background-color: white;
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.innermenu {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/4254/4254068.png);
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 31px;
+    display: block;
+    filter: invert(1);
+}
+/* slidermenu */
+.logoafter{
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-position-x: 58px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../icon/logoafter.svg');
+  position: absolute;
+  right: 0;
+  bottom: 67px;
+  z-index: 1;
+  filter: opacity(0.5);
+}
+ .slidermenugrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 89px 75px 36px 105px 120px 72px 89px 53px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logoslidediv logoslidediv logoslidediv logoslidediv"
+    "fourlinks fourlinks fourlinks fourlinks"
+    "fourcube fourcube fourcube fourcube"
+    "fourcube fourcube fourcube fourcube"
+    "fourcube fourcube fourcube fourcube"
+    "fourcube fourcube fourcube fourcube"
+    "fourlinkstwo fourlinkstwo fourlinkstwo fourlinkstwo"
+    "socialmedia socialmedia socialmedia socialmedia";
+  height: 100%;
+  z-index: 5;
+  position: relative;
+  box-shadow: 2px 3px 10px 0px #00000052;
+}
+.logohead {
+    width: 66%;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../icon/iconcolor.svg');
+    margin-left: 8px;
+}
+.logoslidediv {
+  grid-area: logoslidediv;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fourlinks {
+  grid-area: fourlinks;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3px;
+}
+.fourlinks a {
+    background-color: var(--gris);
+    width: 22%;
+    height: 75px;
+    display: flex;
+    color: white;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 1.4rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    letter-spacing: 0;
+    padding: 0 0;
+    text-transform: none;
+}
+.fourlinks a:first-child {
+    background-color: var(--azul);
+}
+.fourlinks a span {
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.home {
+    background-image: url(https://icon-library.com/images/white-home-icon-png/white-home-icon-png-21.jpg);
+}
+.contact {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/4526/4526832.png);
+    filter: invert(1);
+}
+.coti {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/2344/2344247.png);
+    filter: invert(1);
+}
+.porta {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1895/1895474.png);
+    filter: invert(1);
+}
+.cube1 a span, .cube2 a span, .cube3 a span, .cube4 a span {
+  width: 56px;
+  height: 58px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 10px;
+}
+.fourcube a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-family: 'Nunito';
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0;
+    text-transform: none;
+    padding: 0 0;
+}
+.cube1 {
+    background-color: var(--oscuro);
+}
+.fourcube {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 8px 9px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "cube1 cube1 cube2 cube2"
+    "cube1 cube1 cube2 cube2"
+    "cube3 cube3 cube4 cube4"
+    "cube3 cube3 cube4 cube4";
+  grid-area: fourcube;
+  padding: 9px;
+  height: 340px;
+}
+.cube1, .cube2, .cube3, .cube4 {
+  grid-area: cube1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cube2 {
+  grid-area: cube2;
+  background-color: var(--azul);
+}
+.cube3 {
+  grid-area: cube3;
+  background-color: white;
+}
+.cube4 {
+  grid-area: cube4;
+  background-color: #e2e2e2;
+}
+.cube1 a span {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/814/814587.png);
+    filter: invert(1);
+}
+.cube2 a span {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/2838/2838838.png);
+    filter: invert(1);
+    background-color: transparent;
+}
+.cube3 a span {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/3064/3064889.png);
+    background-color: transparent;
+}
+.cube3 a, .cube4 a {
+    color: var(--azul);
+}
+.cube4 span {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/281/281747.png);
+    background-color: transparent;
+}
+.fourlinkstwo {
+  grid-area: fourlinkstwo;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3px;
+}
+.fourlinkstwo a {
+    width: 23%;
+    height: 82px;
+    display: flex;
+    color: white;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 1.4rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--azul);
+}
+.fourlinkstwo a:last-child {
+    background-color: var(--oscuro);
+}
+.fourlinkstwo span {
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 2px;
+}
+span.Whatsapp {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/2111/2111774.png);
+    filter: invert(1);
+}
+
+span.jobs {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/565/565505.png);
+    filter: invert(1);
+}
+
+span.student {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/57/57073.png);
+    filter: invert(1);
+}
+
+span.blog {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/49/49046.png);
+    filter: invert(1);
+}
+.socialmedia {
+  grid-area: socialmedia;display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2px;
+}
+.socialmedia a {
+    width: 15%;
+    height: 52px;
+    background-color: var(--oscuro);
+    display: block;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.socialmedia a:first-child {
+    background-color: var(--azul);
+}
+.socialmedia a span:nth-child(1) {
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.telf {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/3059/3059446.png);
+    filter: invert(1);
+}
+.correo {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/8440/8440777.png);
+    filter: invert(1);
+}
+.fb {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1384/1384005.png);
+    filter: invert(1);
+}
+.ig {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1384/1384031.png);
+    filter: invert(1);
+}
+.in {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/61/61109.png);
+    filter: invert(1);
+}
+.yt {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/717/717426.png);
+    filter: invert(1);
+}
+.logocien {
+    width: 171px;
+    height: 49px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.arrows {
+    width: 77px;
+    height: 43px;
+    background-image: url(https://kom.pe/wp-content/uploads/Diseno-sin-titulo-7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.logocienp {
+    font-size: 1.1rem;
+    font-family: 'Nunito';
+}
+.logocienp p, .cregresiva {
+}
+.logocienp p:last-child {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 1px;
+}
+.cregresiva {
+}
+p#countdown {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+label.promotionsidebar {
+}
+.trueheader {
+    width: 100%;
+    height: 73px;
+    background-color: #07104b;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logoheader {
+    width: 200px;
+    height: 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(https://kom.pe/wp-content/uploads/kom-agencia-digital-logo-blanco.svg);
+    margin-left: 15px;
+}

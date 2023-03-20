@@ -1,0 +1,115 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "lastinfo"
+    "reds"
+    "legal"
+    "listfooone"
+    "listfootwo"
+    "listfoothree"
+    "listfoofour";
+  background-color: var(--oscuro);
+}
+
+.lastinfo {grid-area: lastinfo;margin: 15px 0;}
+
+.reds {grid-area: reds;display: flex;justify-content: space-evenly;margin: 10px 0;}
+
+.legal {grid-area: legal;display: flex;flex-direction: column;align-items: center;margin: 20px 0;}
+
+.listfooone { grid-area: listfooone; }
+
+.listfootwo { grid-area: listfootwo; }
+
+.listfoothree { grid-area: listfoothree; }
+
+.listfoofour { grid-area: listfoofour; }
+
+.logolast {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(https://kom.pe/wp-content/uploads/kom-agencia-digital-logo-blanco.svg);
+    width: 210px;
+    height: 63px;
+    margin: 0 auto;
+}
+
+.lastinfo p {
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0 30px;
+    margin: 10px 0;
+}
+
+.reds a {
+    width: 34px;
+    height: 42px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10px;
+}
+
+.reds {
+}
+
+.reds a:nth-child(1) {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1384/1384005.png);
+    filter: invert(1);
+}
+
+.reds a:nth-child(2) {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1384/1384031.png);
+    filter: invert(1);
+}
+
+.reds a:nth-child(3) {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/61/61109.png);
+    filter: invert(1);
+}
+
+.reds a:nth-child(4) {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/717/717426.png);
+    filter: invert(1);
+}
+
+.legal a {}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.legal a {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.listfooone p, .listfootwo p, .listfoothree p {
+    color: white;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.listfooone span {
+    width: 10px;
+    height: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/9497/9497026.png);
+    display: block;
+}
+
+.listfooone li {
+}

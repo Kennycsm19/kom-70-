@@ -1,0 +1,120 @@
+.container {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "listimgdiv"
+    "litimgtext";
+}
+
+.listimgdiv { grid-area: listimgdiv; }
+
+.litimgtext { grid-area: litimgtext; }
+
+h5 {
+  font-size: 4.5rem;
+  max-width: 543px;
+  min-width: 240px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 39px;
+  margin: 20px 0;
+  color: var(--azultext);
+  font-family: sans-serif;
+}
+
+
+.accordion {
+  color: var(--azultext);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 1.8rem;
+  transition: 0.4s;
+  background-color: white;
+  font-weight: 600;
+  border: 0;
+  border-bottom: 1px solid var(--plomo);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+button.accordion.active {
+    color: var(--naranja);
+}
+.accordion:after {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/892/892528.png);
+  background-size: cover;
+  transform: rotate(360deg);
+  display: block;
+  width: 15px;
+  height: 15px;
+  content: '';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  right: 0;
+  position: absolute;
+  margin-right: 18px;
+  transition: transform 0.5s;
+}
+
+.active:after {
+  transform: rotate(90deg);
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: 1.8rem;
+  color: var(--azultext);
+  margin: 6px 0;
+}
+
+.iconchange {
+    display:inline-block;
+    margin-right: 10px;
+    width: 30px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/10025/10025294.png);
+}
+
+.accordion.active:nth-child(1) .iconchange {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/3135/3135810.png);
+}
+.accordion.active:nth-child(2) .iconchange {
+    background-image: url(); */ aqui cambiar el link de las images /*
+}
+.accordion.active:nth-child(3) .iconchange {
+    background-image: url(); */ aqui cambiar el link de las images /*
+}
+.accordion.active:nth-child(4) .iconchange {
+    background-image: url(); */ aqui cambiar el link de las images /*
+}
+.accordion.active:nth-child(5) .iconchange {
+    background-image: url(); */ aqui cambiar el link de las images /*
+}
+.accordion.active:nth-child(6) .iconchange {
+    background-image: url(); */ aqui cambiar el link de las images /*
+}
+.accordion.active:nth-child(7) .iconchange {
+    background-image: url(); */ aqui cambiar el link de las images /*
+}
+.accordion.active:nth-child(8) .iconchange {
+    background-image: url(); */ aqui cambiar el link de las images /*
+}
+.accordion.active:nth-child(9) .iconchange {
+    background-image: url(); */ aqui cambiar el link de las images /*
+}

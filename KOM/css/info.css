@@ -1,0 +1,115 @@
+.info {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr auto auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "infotext infotext infotext infotext"
+    "infotext infotext infotext infotext"
+    "infotext infotext infotext infotext"
+    "infotext infotext infotext infotext"
+    "infovideo infovideo infovideo infovideo"
+    "infovideo infovideo infovideo infovideo"
+    "infovideo infovideo infovideo infovideo"
+    "infovideo infovideo infovideo infovideo";
+}
+
+.infotext { grid-area: infotext; }
+
+.infovideo { grid-area: infovideo; }
+section#infosect {
+    min-width: 320px;
+    color: var(--azul);
+}
+
+.infotext {
+    padding: 20px;
+    font-family: sans-serif;
+    color: var(--azultext);
+}
+
+.infotext p:nth-child(1) {
+    font-size: 2.8rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: var(--naranja);
+    margin: 15px 0;
+}
+
+h3 {
+  font-size: 3.5rem;
+  width: 240px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 39px;
+  margin: 20px 0;
+  color: var(--azultext);
+}
+
+.infotext p:nth-child(3) {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+h4 {
+    font-size: 2.2rem;
+    width: 249px;
+    font-weight: 800;
+    font-family: 'Nunito';
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.infotext > p {
+    font-size: 1.8rem;
+    text-align: justify;
+    font-family: 'Nunito';
+    font-weight: 400;
+}
+.infotext i {
+    width: 18px;
+    height: 2px;
+    background-color: var(--azul);
+    display: block;
+    margin-right: 5px;
+}
+
+p.pguion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.pguion strong {
+    font-weight: 800;
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+.pguion small {
+    margin-left: 6px;
+    margin-top: 3.9px;
+    color: var(--naranja);
+}
+video::-webkit-media-controls {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+video::-webkit-media-controls-play-button {
+  background-color: #06c;
+color: #fff;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+font-size: 1.5em;
+}
+.info {
+    margin-bottom: 20px;
+}
+.infovideo {
+    display: flex;
+    justify-content: center;
+}
